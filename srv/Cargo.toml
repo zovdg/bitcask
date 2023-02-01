@@ -1,0 +1,18 @@
+[package]
+name = "srv"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.23"
+ctrlc = { version = "3.2.3", features = ["termination"] }
+env_logger = "0.10.0"
+glob = "0.3.0"
+log = { version = "0.4.17", features = ["std"] }
+thiserror = "1.0.37"
+
+[dev-dependencies]
+rand = "0.8.5"
+tempdir = "0.3.7"
